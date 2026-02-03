@@ -1,0 +1,54 @@
+.table-container {
+  margin: 20px;
+  overflow-x: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  text-align: left;
+}
+
+.custom-table th {
+  background-color: #1a1a1a; /* Dark theme for header */
+  color: #D4AF37; /* Gold color for text */
+  padding: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.custom-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+
+.custom-table tr:hover {
+  background-color: #f9f9f9; /* Row hover effect */
+}
+
+/* Status Badges */
+.status-badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.status-badge.completed {
+  background-color: #e6fcf5;
+  color: #0ca678;
+}
+
+.status-badge.pending {
+  background-color: #fff4e6;
+  color: #f76707;
+}
+
+.todo-text {
+  font-weight: 500;
+}
