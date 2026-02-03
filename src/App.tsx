@@ -12,8 +12,11 @@ function App() {
   const {data, isLoading, isError, error} = useQuery({
     queryKey: ['todos'],
     queryFn: fetchData,
+    staleTime: 5 * 1000,
   })
 
+  console.log(data, "data")
+  
   if(isLoading){
     return <div>Loading...</div>
   }
@@ -22,7 +25,6 @@ function App() {
     return <div>Error: {error?.message}</div>
   }
 
-  console.log(data, "data in query")
   return (
     <div>
       <h6>Tanstack / React Query</h6>
